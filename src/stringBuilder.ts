@@ -1,11 +1,11 @@
 class stringProcessor{
     private data: string;
     constructor(input: string){
-        input = data;
+        this.data = input;
     }
 
     public getString(): string{
-        return data;
+        return this.data;
     }
 
     public setString(data:string){
@@ -19,7 +19,6 @@ class stringProcessor{
             chars[i] = chars[chars.length -1];
             chars[chars.length -1] = cTmp;
         }
-
         this.data = chars.join('');
     }
 }
